@@ -1,0 +1,59 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.ticketsystem:support-ticket-system >---------------
+[INFO] Building support-ticket-system 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ support-ticket-system ---
+[INFO] Deleting D:\AUCA\AUCA\webtech\25722_Final\_support-ticket-system\support-ticket-system\target
+[INFO] 
+[INFO] >>> spring-boot:3.5.7:run (default-cli) > test-compile @ support-ticket-system >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ support-ticket-system ---
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ support-ticket-system ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 74 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java: D:\AUCA\AUCA\webtech\25722_Final\_support-ticket-system\support-ticket-system\src\main\java\com\ticketsystem\config\SecurityConfig.java uses or overrides a deprecated API.
+[INFO] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[41,17] cors() in org.springframework.security.config.annotation.web.builders.HttpSecurity has been deprecated and marked for removal
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[41,24] and() in org.springframework.security.config.annotation.SecurityConfigurerAdapter has been deprecated and marked for removal
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[42,17] csrf() in org.springframework.security.config.annotation.web.builders.HttpSecurity has been deprecated and marked for removal
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[43,17] exceptionHandling() in org.springframework.security.config.annotation.web.builders.HttpSecurity has been deprecated and marked for removal
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[45,17] and() in org.springframework.security.config.annotation.SecurityConfigurerAdapter has been deprecated and marked for removal
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[46,17] sessionManagement() in org.springframework.security.config.annotation.web.builders.HttpSecurity has been deprecated and marked for removal
+[WARNING] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/config/SecurityConfig.java:[48,17] and() in org.springframework.security.config.annotation.SecurityConfigurerAdapter has been deprecated and marked for removal
+[INFO] 7 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/service/DashboardService.java:[59,9] cannot find symbol
+  symbol:   class List
+  location: class com.ticketsystem.service.DashboardService
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.265 s
+[INFO] Finished at: 2025-12-16T03:12:55+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project support-ticket-system: Compilation failure
+[ERROR] /D:/AUCA/AUCA/webtech/25722_Final/_support-ticket-system/support-ticket-system/src/main/java/com/ticketsystem/service/DashboardService.java:[59,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class com.ticketsystem.service.DashboardService
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,104 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.ticketsystem:support-ticket-system >---------------
+[INFO] Building support-ticket-system 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.7:run (default-cli) > test-compile @ support-ticket-system >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ support-ticket-system ---
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ support-ticket-system ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ support-ticket-system ---
+[INFO] skip non existing resourceDirectory D:\AUCA\AUCA\webtech\25722_Final\_support-ticket-system\support-ticket-system\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ support-ticket-system ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.7:run (default-cli) < test-compile @ support-ticket-system <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.7:run (default-cli) @ support-ticket-system ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2025-12-16T03:05:34.583+02:00  INFO 2000 --- [  restartedMain] c.t.SupportTicketSystemApplication       : Starting SupportTicketSystemApplication using Java 21.0.8 with PID 2000 (D:\AUCA\AUCA\webtech\25722_Final\_support-ticket-system\support-ticket-system\target\classes started by kzibi in D:\AUCA\AUCA\webtech\25722_Final\_support-ticket-system\support-ticket-system)
+2025-12-16T03:05:34.585+02:00 DEBUG 2000 --- [  restartedMain] c.t.SupportTicketSystemApplication       : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-16T03:05:34.586+02:00  INFO 2000 --- [  restartedMain] c.t.SupportTicketSystemApplication       : The following 1 profile is active: "dev"
+2025-12-16T03:05:34.654+02:00  INFO 2000 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-16T03:05:34.654+02:00  INFO 2000 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-16T03:05:35.587+02:00  INFO 2000 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-16T03:05:35.683+02:00  INFO 2000 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 7 JPA repository interfaces.
+2025-12-16T03:05:36.359+02:00  INFO 2000 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-12-16T03:05:36.375+02:00  INFO 2000 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-16T03:05:36.375+02:00  INFO 2000 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-16T03:05:36.431+02:00  INFO 2000 --- [  restartedMain] o.a.c.c.C.[.[localhost].[/support-api]   : Initializing Spring embedded WebApplicationContext
+2025-12-16T03:05:36.432+02:00  INFO 2000 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+2025-12-16T03:05:36.582+02:00  INFO 2000 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-16T03:05:36.631+02:00  INFO 2000 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-16T03:05:36.663+02:00  INFO 2000 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-16T03:05:36.968+02:00  INFO 2000 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-16T03:05:37.008+02:00  INFO 2000 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-16T03:05:37.263+02:00  INFO 2000 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@533d5d49
+2025-12-16T03:05:37.267+02:00  INFO 2000 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-16T03:05:37.328+02:00  WARN 2000 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-16T03:05:37.355+02:00  INFO 2000 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-16T03:05:39.159+02:00  INFO 2000 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-16T03:05:39.392+02:00  INFO 2000 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-16T03:05:39.749+02:00  INFO 2000 --- [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-16T03:05:40.759+02:00 DEBUG 2000 --- [  restartedMain] c.t.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-16T03:05:40.916+02:00  INFO 2000 --- [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-16T03:05:40.916+02:00  WARN 2000 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-12-16T03:05:43.664+02:00 DEBUG 2000 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 70 mappings in 'requestMappingHandlerMapping'
+2025-12-16T03:05:43.846+02:00 DEBUG 2000 --- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-16T03:05:44.384+02:00 DEBUG 2000 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-16T03:05:44.554+02:00 DEBUG 2000 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-16T03:05:44.628+02:00 DEBUG 2000 --- [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-16T03:05:44.801+02:00  WARN 2000 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-12-16T03:05:44.831+02:00  WARN 2000 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-16T03:05:44.831+02:00  INFO 2000 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-16T03:05:44.843+02:00  INFO 2000 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-16T03:05:44.847+02:00  INFO 2000 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-16T03:05:44.867+02:00  INFO 2000 --- [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-16T03:05:44.899+02:00 ERROR 2000 --- [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8085 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8085 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.052 s
+[INFO] Finished at: 2025-12-16T03:05:45+02:00
+[INFO] ------------------------------------------------------------------------

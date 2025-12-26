@@ -1,0 +1,40 @@
+package com.ticketsystem.dto;
+
+import java.time.LocalDateTime;
+
+public class NotificationDTO {
+    private Long id;
+    private String title;
+    private String message;
+    private boolean isRead;
+    private LocalDateTime createdAt;
+
+    public NotificationDTO(Long id, String title, String message, boolean isRead, LocalDateTime createdAt) {
+        this.id = id;
+        this.title = title;
+        this.message = message;
+        this.isRead = isRead;
+        this.createdAt = createdAt;
+    }
+
+    // Getters
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public boolean isRead() {
+        return isRead;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+}

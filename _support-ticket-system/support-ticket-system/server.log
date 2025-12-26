@@ -1,0 +1,14 @@
+2025-12-23T16:54:11.235+02:00 DEBUG 12752 --- [http-nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/notifications/unread-count
+2025-12-23T16:54:11.252+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications/unread-count
+2025-12-23T16:54:11.273+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-23T16:54:11.280+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-12-23T16:54:11.280+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-12-23T16:54:11.282+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2025-12-23T16:54:11.284+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-12-23T16:54:11.302+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-12-23T16:54:11.309+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 23 16:54:11 CAT 2025, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2025-12-23T16:54:11.315+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2025-12-23T16:54:11.321+02:00 DEBUG 12752 --- [http-nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-23T16:54:34.288+02:00  WARN 12752 --- [HikariPool-11:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=20h38m46s15ms288µs900ns).
+2025-12-23T17:25:49.416+02:00  WARN 12752 --- [HikariPool-11:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=1m44s661ms130µs500ns).
+2025-12-23T20:12:15.340+02:00  WARN 12752 --- [HikariPool-11:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=57m2s150ms78µs300ns).
