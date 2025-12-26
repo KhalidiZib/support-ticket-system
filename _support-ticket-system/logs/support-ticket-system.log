@@ -1,0 +1,644 @@
+2025-12-04 22:08:05.920 [restartedMain] INFO  c.t.SupportTicketSystemApplication - Starting SupportTicketSystemApplication using Java 21.0.8 with PID 42588 (D:\AUCA\AUCA\webtech\_support-ticket-system\support-ticket-system\target\classes started by kzibi in D:\AUCA\AUCA\webtech\_support-ticket-system)
+2025-12-04 22:08:05.922 [restartedMain] DEBUG c.t.SupportTicketSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-04 22:08:05.923 [restartedMain] INFO  c.t.SupportTicketSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 22:08:05.987 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-04 22:08:05.988 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-04 22:08:07.268 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04 22:08:07.374 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 7 JPA repository interfaces.
+2025-12-04 22:08:08.574 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-12-04 22:08:08.600 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 22:08:08.600 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-04 22:08:08.672 [restartedMain] INFO  o.a.c.c.C.[.[.[/support-api] - Initializing Spring embedded WebApplicationContext
+2025-12-04 22:08:08.673 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2684 ms
+2025-12-04 22:08:08.905 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04 22:08:09.030 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-04 22:08:09.108 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-04 22:08:09.544 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04 22:08:09.641 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Starting...
+2025-12-04 22:08:10.018 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - SupportTicketPool - Added connection org.postgresql.jdbc.PgConnection@41f7cc9b
+2025-12-04 22:08:10.022 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Start completed.
+2025-12-04 22:08:10.083 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04 22:08:10.117 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SupportTicketPool)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04 22:08:11.408 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04 22:08:11.427 [restartedMain] DEBUG org.hibernate.SQL - 
+    set client_min_messages = WARNING
+2025-12-04 22:08:11.431 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       drop constraint if exists FK50jy6x3d7eqk9041essropoil
+2025-12-04 22:08:11.456 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       drop constraint if exists FKfplvi1i9xsbsjr3kc472dii9o
+2025-12-04 22:08:11.459 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       drop constraint if exists FKn2na60ukhs76ibtpt9burkm27
+2025-12-04 22:08:11.461 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       drop constraint if exists FKj7vc0aigr2m5mew52v7ddt4fo
+2025-12-04 22:08:11.462 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists locations 
+       drop constraint if exists FKhjdkpuoptx1cd04r3atchkpi0
+2025-12-04 22:08:11.464 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists password_reset_tokens 
+       drop constraint if exists FKk3ndxg5xp6v7wd4gjyusp15gq
+2025-12-04 22:08:11.466 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       drop constraint if exists FK4xc9tp94jg4p8j36v2svl1f1b
+2025-12-04 22:08:11.468 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       drop constraint if exists FKhkpmm1fss8xw9cx9pf31px0uc
+2025-12-04 22:08:11.470 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       drop constraint if exists FK9hr93xcbpi7ep2s1gxhxmfpjo
+2025-12-04 22:08:11.472 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKd52vyeeadu7t2amt7bq1txg4e
+2025-12-04 22:08:11.474 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKv3rpsd50yy4waw8na87e3a1u
+2025-12-04 22:08:11.476 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKcl6she6ic7de97o1ryli2g95i
+2025-12-04 22:08:11.477 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKlhn7j97u2f7cyertb554ixthg
+2025-12-04 22:08:11.480 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists FKdk0xfnnthbj8afp1ira6sndte
+2025-12-04 22:08:11.482 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists agent_categories cascade
+2025-12-04 22:08:11.492 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists comments cascade
+2025-12-04 22:08:11.499 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists locations cascade
+2025-12-04 22:08:11.506 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists password_reset_tokens cascade
+2025-12-04 22:08:11.512 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists ticket_assignments cascade
+2025-12-04 22:08:11.515 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists ticket_categories cascade
+2025-12-04 22:08:11.524 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists tickets cascade
+2025-12-04 22:08:11.530 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists users cascade
+2025-12-04 22:08:11.544 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table agent_categories (
+        agent_id bigint not null,
+        category_id bigint not null,
+        primary key (agent_id, category_id)
+    )
+2025-12-04 22:08:11.573 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table comments (
+        internal boolean not null,
+        author_id bigint not null,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        ticket_id bigint not null,
+        updated_at timestamp(6),
+        content TEXT not null,
+        primary key (id)
+    )
+2025-12-04 22:08:11.586 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table locations (
+        id bigint generated by default as identity,
+        parent_id bigint,
+        name varchar(255) not null,
+        type varchar(255) check (type in ('PROVINCE','DISTRICT','SECTOR','CELL','VILLAGE')),
+        primary key (id)
+    )
+2025-12-04 22:08:11.597 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table password_reset_tokens (
+        used boolean not null,
+        expiry_date timestamp(6),
+        id bigint generated by default as identity,
+        user_id bigint not null unique,
+        token varchar(255) unique,
+        primary key (id)
+    )
+2025-12-04 22:08:11.608 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table ticket_assignments (
+        notification_sent boolean not null,
+        acknowledged_at timestamp(6),
+        agent_id bigint not null,
+        assigned_at timestamp(6),
+        category_id bigint not null,
+        id bigint generated by default as identity,
+        ticket_id bigint not null,
+        status varchar(255) check (status in ('ASSIGNED','ACKNOWLEDGED','REJECTED')),
+        primary key (id)
+    )
+2025-12-04 22:08:11.615 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table ticket_categories (
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        updated_at timestamp(6),
+        description varchar(255),
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+2025-12-04 22:08:11.623 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table tickets (
+        assigned_agent_id bigint,
+        category_id bigint not null,
+        closed_at timestamp(6),
+        created_at timestamp(6),
+        customer_id bigint not null,
+        id bigint generated by default as identity,
+        location_id bigint not null,
+        resolved_at timestamp(6),
+        updated_at timestamp(6),
+        description TEXT not null,
+        priority varchar(255) check (priority in ('LOW','MEDIUM','HIGH','URGENT')),
+        status varchar(255) check (status in ('OPEN','IN_PROGRESS','RESOLVED','CLOSED')),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2025-12-04 22:08:11.630 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table users (
+        enabled boolean not null,
+        two_factor_enabled boolean not null,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        location_id bigint,
+        updated_at timestamp(6),
+        email varchar(255) not null unique,
+        name varchar(255) not null,
+        password varchar(255) not null,
+        phone_number varchar(255),
+        role varchar(255) check (role in ('CUSTOMER','AGENT','ADMIN')),
+        two_factor_secret varchar(255),
+        primary key (id)
+    )
+2025-12-04 22:08:11.642 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       add constraint FK50jy6x3d7eqk9041essropoil 
+       foreign key (category_id) 
+       references ticket_categories
+2025-12-04 22:08:11.656 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       add constraint FKfplvi1i9xsbsjr3kc472dii9o 
+       foreign key (agent_id) 
+       references users
+2025-12-04 22:08:11.660 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       add constraint FKn2na60ukhs76ibtpt9burkm27 
+       foreign key (author_id) 
+       references users
+2025-12-04 22:08:11.663 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       add constraint FKj7vc0aigr2m5mew52v7ddt4fo 
+       foreign key (ticket_id) 
+       references tickets
+2025-12-04 22:08:11.666 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists locations 
+       add constraint FKhjdkpuoptx1cd04r3atchkpi0 
+       foreign key (parent_id) 
+       references locations
+2025-12-04 22:08:11.670 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists password_reset_tokens 
+       add constraint FKk3ndxg5xp6v7wd4gjyusp15gq 
+       foreign key (user_id) 
+       references users
+2025-12-04 22:08:11.674 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       add constraint FK4xc9tp94jg4p8j36v2svl1f1b 
+       foreign key (agent_id) 
+       references users
+2025-12-04 22:08:11.677 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       add constraint FKhkpmm1fss8xw9cx9pf31px0uc 
+       foreign key (category_id) 
+       references ticket_categories
+2025-12-04 22:08:11.680 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       add constraint FK9hr93xcbpi7ep2s1gxhxmfpjo 
+       foreign key (ticket_id) 
+       references tickets
+2025-12-04 22:08:11.683 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKd52vyeeadu7t2amt7bq1txg4e 
+       foreign key (assigned_agent_id) 
+       references users
+2025-12-04 22:08:11.686 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKv3rpsd50yy4waw8na87e3a1u 
+       foreign key (category_id) 
+       references ticket_categories
+2025-12-04 22:08:11.689 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKcl6she6ic7de97o1ryli2g95i 
+       foreign key (customer_id) 
+       references users
+2025-12-04 22:08:11.691 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKlhn7j97u2f7cyertb554ixthg 
+       foreign key (location_id) 
+       references locations
+2025-12-04 22:08:11.695 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint FKdk0xfnnthbj8afp1ira6sndte 
+       foreign key (location_id) 
+       references locations
+2025-12-04 22:08:11.700 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 22:08:12.123 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04 22:08:13.667 [restartedMain] DEBUG c.t.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-04 22:08:14.574 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04 22:08:15.871 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-04 22:08:16.280 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-04 22:08:16.343 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/support-api'
+2025-12-04 22:08:16.360 [restartedMain] INFO  c.t.SupportTicketSystemApplication - Started SupportTicketSystemApplication in 11.126 seconds (process running for 11.693)
+2025-12-04 22:08:16.462 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-12-04 22:08:16.507 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-04 22:08:16.537 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:348)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:567)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:698)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:416)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy144.count(Unknown Source)
+	at com.ticketsystem.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.ticketsystem.SupportTicketSystemApplication.main(SupportTicketSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.TransactionException: Unable to commit against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:268)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:563)
+	... 36 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:1004)
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:378)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:87)
+	... 39 common frames omitted
+2025-12-04 22:08:16.550 [restartedMain] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04 22:08:16.569 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-04 22:08:16.579 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 22:08:16.584 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Shutdown initiated...
+2025-12-04 22:08:16.591 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Shutdown completed.
+2025-12-04 22:09:02.162 [restartedMain] INFO  c.t.SupportTicketSystemApplication - Starting SupportTicketSystemApplication using Java 21.0.8 with PID 22536 (D:\AUCA\AUCA\webtech\_support-ticket-system\support-ticket-system\target\classes started by kzibi in D:\AUCA\AUCA\webtech\_support-ticket-system)
+2025-12-04 22:09:02.165 [restartedMain] DEBUG c.t.SupportTicketSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-04 22:09:02.166 [restartedMain] INFO  c.t.SupportTicketSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 22:09:02.249 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-04 22:09:02.250 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-04 22:09:03.431 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04 22:09:03.521 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 7 JPA repository interfaces.
+2025-12-04 22:09:04.475 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-12-04 22:09:04.497 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 22:09:04.498 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-04 22:09:04.563 [restartedMain] INFO  o.a.c.c.C.[.[.[/support-api] - Initializing Spring embedded WebApplicationContext
+2025-12-04 22:09:04.563 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2312 ms
+2025-12-04 22:09:04.787 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04 22:09:04.968 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-04 22:09:05.038 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-04 22:09:05.398 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04 22:09:05.433 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Starting...
+2025-12-04 22:09:05.685 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - SupportTicketPool - Added connection org.postgresql.jdbc.PgConnection@198db954
+2025-12-04 22:09:05.689 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Start completed.
+2025-12-04 22:09:05.730 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04 22:09:05.756 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SupportTicketPool)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04 22:09:06.978 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04 22:09:06.993 [restartedMain] DEBUG org.hibernate.SQL - 
+    set client_min_messages = WARNING
+2025-12-04 22:09:06.996 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       drop constraint if exists FK50jy6x3d7eqk9041essropoil
+2025-12-04 22:09:07.001 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       drop constraint if exists FKfplvi1i9xsbsjr3kc472dii9o
+2025-12-04 22:09:07.004 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       drop constraint if exists FKn2na60ukhs76ibtpt9burkm27
+2025-12-04 22:09:07.006 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       drop constraint if exists FKj7vc0aigr2m5mew52v7ddt4fo
+2025-12-04 22:09:07.008 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists locations 
+       drop constraint if exists FKhjdkpuoptx1cd04r3atchkpi0
+2025-12-04 22:09:07.010 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists password_reset_tokens 
+       drop constraint if exists FKk3ndxg5xp6v7wd4gjyusp15gq
+2025-12-04 22:09:07.013 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       drop constraint if exists FK4xc9tp94jg4p8j36v2svl1f1b
+2025-12-04 22:09:07.014 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       drop constraint if exists FKhkpmm1fss8xw9cx9pf31px0uc
+2025-12-04 22:09:07.016 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       drop constraint if exists FK9hr93xcbpi7ep2s1gxhxmfpjo
+2025-12-04 22:09:07.018 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKd52vyeeadu7t2amt7bq1txg4e
+2025-12-04 22:09:07.021 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKv3rpsd50yy4waw8na87e3a1u
+2025-12-04 22:09:07.023 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKcl6she6ic7de97o1ryli2g95i
+2025-12-04 22:09:07.025 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       drop constraint if exists FKlhn7j97u2f7cyertb554ixthg
+2025-12-04 22:09:07.026 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists FKdk0xfnnthbj8afp1ira6sndte
+2025-12-04 22:09:07.028 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists agent_categories cascade
+2025-12-04 22:09:07.032 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists comments cascade
+2025-12-04 22:09:07.036 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists locations cascade
+2025-12-04 22:09:07.041 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists password_reset_tokens cascade
+2025-12-04 22:09:07.046 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists ticket_assignments cascade
+2025-12-04 22:09:07.049 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists ticket_categories cascade
+2025-12-04 22:09:07.055 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists tickets cascade
+2025-12-04 22:09:07.060 [restartedMain] DEBUG org.hibernate.SQL - 
+    drop table if exists users cascade
+2025-12-04 22:09:07.068 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table agent_categories (
+        agent_id bigint not null,
+        category_id bigint not null,
+        primary key (agent_id, category_id)
+    )
+2025-12-04 22:09:07.079 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table comments (
+        internal boolean not null,
+        author_id bigint not null,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        ticket_id bigint not null,
+        updated_at timestamp(6),
+        content TEXT not null,
+        primary key (id)
+    )
+2025-12-04 22:09:07.089 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table locations (
+        id bigint generated by default as identity,
+        parent_id bigint,
+        name varchar(255) not null,
+        type varchar(255) check (type in ('PROVINCE','DISTRICT','SECTOR','CELL','VILLAGE')),
+        primary key (id)
+    )
+2025-12-04 22:09:07.097 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table password_reset_tokens (
+        used boolean not null,
+        expiry_date timestamp(6),
+        id bigint generated by default as identity,
+        user_id bigint not null unique,
+        token varchar(255) unique,
+        primary key (id)
+    )
+2025-12-04 22:09:07.106 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table ticket_assignments (
+        notification_sent boolean not null,
+        acknowledged_at timestamp(6),
+        agent_id bigint not null,
+        assigned_at timestamp(6),
+        category_id bigint not null,
+        id bigint generated by default as identity,
+        ticket_id bigint not null,
+        status varchar(255) check (status in ('ASSIGNED','ACKNOWLEDGED','REJECTED')),
+        primary key (id)
+    )
+2025-12-04 22:09:07.111 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table ticket_categories (
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        updated_at timestamp(6),
+        description varchar(255),
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+2025-12-04 22:09:07.120 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table tickets (
+        assigned_agent_id bigint,
+        category_id bigint not null,
+        closed_at timestamp(6),
+        created_at timestamp(6),
+        customer_id bigint not null,
+        id bigint generated by default as identity,
+        location_id bigint not null,
+        resolved_at timestamp(6),
+        updated_at timestamp(6),
+        description TEXT not null,
+        priority varchar(255) check (priority in ('LOW','MEDIUM','HIGH','URGENT')),
+        status varchar(255) check (status in ('OPEN','IN_PROGRESS','RESOLVED','CLOSED')),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2025-12-04 22:09:07.128 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table users (
+        enabled boolean not null,
+        two_factor_enabled boolean not null,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        location_id bigint,
+        updated_at timestamp(6),
+        email varchar(255) not null unique,
+        name varchar(255) not null,
+        password varchar(255) not null,
+        phone_number varchar(255),
+        role varchar(255) check (role in ('CUSTOMER','AGENT','ADMIN')),
+        two_factor_secret varchar(255),
+        primary key (id)
+    )
+2025-12-04 22:09:07.137 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       add constraint FK50jy6x3d7eqk9041essropoil 
+       foreign key (category_id) 
+       references ticket_categories
+2025-12-04 22:09:07.143 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists agent_categories 
+       add constraint FKfplvi1i9xsbsjr3kc472dii9o 
+       foreign key (agent_id) 
+       references users
+2025-12-04 22:09:07.147 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       add constraint FKn2na60ukhs76ibtpt9burkm27 
+       foreign key (author_id) 
+       references users
+2025-12-04 22:09:07.150 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists comments 
+       add constraint FKj7vc0aigr2m5mew52v7ddt4fo 
+       foreign key (ticket_id) 
+       references tickets
+2025-12-04 22:09:07.154 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists locations 
+       add constraint FKhjdkpuoptx1cd04r3atchkpi0 
+       foreign key (parent_id) 
+       references locations
+2025-12-04 22:09:07.157 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists password_reset_tokens 
+       add constraint FKk3ndxg5xp6v7wd4gjyusp15gq 
+       foreign key (user_id) 
+       references users
+2025-12-04 22:09:07.161 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       add constraint FK4xc9tp94jg4p8j36v2svl1f1b 
+       foreign key (agent_id) 
+       references users
+2025-12-04 22:09:07.164 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       add constraint FKhkpmm1fss8xw9cx9pf31px0uc 
+       foreign key (category_id) 
+       references ticket_categories
+2025-12-04 22:09:07.166 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists ticket_assignments 
+       add constraint FK9hr93xcbpi7ep2s1gxhxmfpjo 
+       foreign key (ticket_id) 
+       references tickets
+2025-12-04 22:09:07.171 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKd52vyeeadu7t2amt7bq1txg4e 
+       foreign key (assigned_agent_id) 
+       references users
+2025-12-04 22:09:07.173 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKv3rpsd50yy4waw8na87e3a1u 
+       foreign key (category_id) 
+       references ticket_categories
+2025-12-04 22:09:07.176 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKcl6she6ic7de97o1ryli2g95i 
+       foreign key (customer_id) 
+       references users
+2025-12-04 22:09:07.178 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists tickets 
+       add constraint FKlhn7j97u2f7cyertb554ixthg 
+       foreign key (location_id) 
+       references locations
+2025-12-04 22:09:07.180 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint FKdk0xfnnthbj8afp1ira6sndte 
+       foreign key (location_id) 
+       references locations
+2025-12-04 22:09:07.186 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 22:09:07.583 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04 22:09:09.096 [restartedMain] DEBUG c.t.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-04 22:09:09.972 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04 22:09:11.347 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-04 22:09:11.739 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-04 22:09:11.794 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/support-api'
+2025-12-04 22:09:11.809 [restartedMain] INFO  c.t.SupportTicketSystemApplication - Started SupportTicketSystemApplication in 10.246 seconds (process running for 10.763)
+2025-12-04 22:09:11.919 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-12-04 22:09:11.983 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-04 22:09:12.021 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:348)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:567)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:698)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:416)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy144.count(Unknown Source)
+	at com.ticketsystem.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.ticketsystem.SupportTicketSystemApplication.main(SupportTicketSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.TransactionException: Unable to commit against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:268)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:563)
+	... 36 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:1004)
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:378)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:87)
+	... 39 common frames omitted
+2025-12-04 22:09:12.034 [restartedMain] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04 22:09:12.052 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-04 22:09:12.063 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 22:09:12.070 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Shutdown initiated...
+2025-12-04 22:09:12.079 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - SupportTicketPool - Shutdown completed.
